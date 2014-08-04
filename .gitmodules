@@ -1,0 +1,3 @@
+[submodule "nodecore"]
+	path = nodecore
+	url = git@github.com:expa/nodecore
