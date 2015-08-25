@@ -1,0 +1,8 @@
+FROM progrium/buildstep:latest
+EXPOSE 5000
+
+ADD . /app
+WORKDIR /app
+
+RUN /build/builder
+CMD /start web
