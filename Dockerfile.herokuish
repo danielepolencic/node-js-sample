@@ -1,0 +1,8 @@
+FROM gliderlabs/herokuish:latest
+EXPOSE 5000
+
+ADD . /app
+WORKDIR /app
+
+RUN herokuish buildpack build
+CMD herokuish procfile start web
