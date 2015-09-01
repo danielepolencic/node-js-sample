@@ -1,8 +1,10 @@
-FROM gliderlabs/herokuish:latest
+FROM herokuish:dev
 EXPOSE 5000
 
 ADD . /app
 WORKDIR /app
+ENV HOME /app
+# ENV TRACE true
 
-RUN herokuish buildpack build
-CMD herokuish procfile start web
+RUN /build
+CMD exec /start web

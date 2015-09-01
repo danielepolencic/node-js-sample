@@ -3,6 +3,7 @@ EXPOSE 5000
 
 ADD . /app
 WORKDIR /app
+ENV HOME /app
 
 RUN /build/builder
-CMD /start web
+CMD exec /start web
