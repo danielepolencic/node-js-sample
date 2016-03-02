@@ -1,1 +1,5 @@
+WAIT=2
+TIMEOUT=5
+ATTEMPTS=2
+
 / Hello World!
