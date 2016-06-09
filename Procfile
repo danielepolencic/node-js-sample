@@ -4,7 +4,7 @@
 
 # Procfile for development using the new threaded worker (scheduler, twitter stream and delayed job)
 web: node index.js # testing inline comment
-worker: node worker.js
+# worker: node worker.js
 db-update: echo 'updating db'
 
 # Old version with separate processes (use this if you have issues with the threaded version)
