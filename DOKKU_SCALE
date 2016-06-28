@@ -1,2 +1,3 @@
 # test comment
 web=1 # testing inline comment
+worker=1
