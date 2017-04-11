@@ -1,0 +1,101 @@
+{
+  "name": "danielepolencic/node-js-sample",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.25"
+  },
+  "title": "",
+  "branch": "",
+  "style": {
+    "name": "Future",
+    "componentSet": {
+      "nav": "nav/BasicNav",
+      "header": "header/BannerHeader",
+      "article": "article/BasicArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "\"Avenir Next\", Helvetica, sans-serif",
+    "heading": {
+      "fontWeight": 500,
+      "textTransform": "uppercase",
+      "letterSpacing": "0.2em"
+    },
+    "alternativeText": {
+      "textTransform": "uppercase",
+      "fontWeight": 400,
+      "letterSpacing": "0.2em",
+      "opacity": 0.75
+    },
+    "colors": {
+      "text": "#333",
+      "background": "#fff",
+      "primary": "#666",
+      "secondary": "#888",
+      "highlight": "#1f80ff",
+      "muted": "#f6f6f6",
+      "border": "#eee"
+    },
+    "layout": {
+      "centered": true,
+      "maxWidth": 1024,
+      "bannerHeight": "80vh"
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "http://node-js-sample.herokuapp.com/",
+          "text": "Home"
+        },
+        {
+          "href": "https://github.com/danielepolencic/node-js-sample",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://npmjs.com/package/node-js-sample",
+          "text": "npm"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "node-js-sample",
+      "subhead": "A barebones Node.js app using the Express framework.",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "node-js-sample: A barebones Node.js app using the Express framework.",
+          "url": "http://node-js-sample.herokuapp.com/"
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "danielepolencic",
+          "repo": "node-js-sample"
+        }
+      ],
+      "text": "v0.1.0"
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "\n"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/danielepolencic/node-js-sample",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/danielepolencic",
+          "text": "danielepolencic"
+        }
+      ]
+    }
+  ]
+}
